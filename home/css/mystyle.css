@@ -7,7 +7,7 @@ body {
     text-align: center;
   }
   
-  p {
+  p.thick {
     font-family: verdana;
     font-weight: bold;
     font-size: 20px;
