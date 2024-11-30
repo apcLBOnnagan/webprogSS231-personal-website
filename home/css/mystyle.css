@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 229, 162);
   }
   
   h1 {
@@ -9,5 +9,6 @@ body {
   
   p {
     font-family: verdana;
+    font-weight: bold;
     font-size: 20px;
   }
