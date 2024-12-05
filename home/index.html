@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <link rel="stylesheet" href="css/mystyle.css">
-    </head>
-    <p class="thick">
-        <br></br>
-        About Me
-        <br></br>
-        My name is Lance Benedict Onnagan, a second-year Computer Science student at Asia Pacific College. 
-        <br></br>
-        Education
-        <br></br>
-        I'm a second-year Computer Science student at Asia Pacific College and, previously studied at Sta. Clara Parish School. 
-        <br></br>
-        IT experience
-        <br></br>
-        My IT experience mainly comes from studying at APC, where I have become familiar with Python and Java programming languages. 
-        <br></br>
-        Hobbies and Interest
-        <br></br>
-        In my free time, I enjoy drawing so feel free to explore my picture gallery below.
-        <br></br>
-        Goals in life
-        <br></br>
-        I have not set specific goals in my life yet because I want to explore myself and the world to form a concrete goal.  
-        <br></br>
-        <br></br>
-        <div>Visit <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a> to learn more about HTML.<div>
-    </p>
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
+<head>
+    <link rel="stylesheet" href="css/flexbox.css">
+</head>
 <body>
 
-<h2>Picture Gallery</h2>
+        <h1>Lance's Personal Profile Web Page</h1>
+    
+    <div class="flex-container">
 
-<table style="width:100%">
-  <tr>
-    <th>Traidtional</th>
-    <th>Digital</th>
-  </tr>
-  <tr>
-    <td><img src="Media (1).jpg"></td>
-    <td><img src="bored.png"></td>
-  </tr>
-</table>
-        
+        <div> <!-- About Me-->
+            <h2>About Me</h2>
+            <p>My name is Lance Benedict Onnagan, a second-year Computer Science student at Asia Pacific College.</p> 
+        </div>   
 
+        <div> <!-- About Me-->
+            <h2>Education</h2>
+            <p>I'm a second-year Computer Science student at Asia Pacific College and, previously studied at Sta. Clara Parish School.</p>
+        </div>
+
+        <div> <!-- AIT experience -->
+            <h2>IT experience</h2>
+            <p>My IT experience mainly comes from studying at APC, where I have become familiar with Python and Java programming languages.</p>
+        </div>    
+
+        <div> <!-- Hobbies and Interest-->
+            <h2> Hobbies and Interest</h2>
+            <p>In my free time, I enjoy drawing so feel free to explore my picture gallery.</p>
+        </div>
+            
+        <div> <!-- Goals in life -->       
+            <h2>Goals in life</h2>
+            <p>
+            I have not set specific goals in my life yet because I want to explore myself and the world to form a concrete goal.  
+            <li>Visit <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a> to learn more about HTML</li>
+            </p>
+        </div>
+    
+        <div> <!-- Pictture Gallery -->
+            <style>
+            table, th, td {
+              border:1px solid black;
+            }
+            </style>
+            
+            
+            <h2>Picture Gallery</h2>
+            
+            <table style="width:100%">
+              <tr>
+                <th>Traidtional</th>
+                <th>Digital</th>
+              </tr>
+              <tr>
+                <td><img src="Media (1).jpg"></td>
+                <td><img src="bored.png"></td>
+              </tr>
+            </table>
+        </div>
+                
+<body>
 </html>
