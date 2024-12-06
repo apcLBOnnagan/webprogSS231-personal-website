@@ -8,8 +8,8 @@
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main main right'
-    'footer footer footer footer footer footer';
+    'menu menu main main main right'
+    'menu menu main main main right';
   gap: 10px;
   background-color: #2196F3;
   padding: 10px;
