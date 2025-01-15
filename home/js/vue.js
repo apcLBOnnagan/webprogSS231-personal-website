@@ -2,9 +2,9 @@ const app = Vue.createApp({
   data() {
    return {
      manyFoods: [
-       {name: 'moodeng', url: 'md (1).png'},
-       {name: 'me', url: 'pfp (1).png'},
-       {name: 'kbbq', url: 'sg (1).svg'},
+       {name: 'moodeng', url: 'md.png'},
+       {name: 'me', url: 'pfp.png'},
+       {name: 'kbbq', url: 'sg.svg'},
      ]
    }
   }
