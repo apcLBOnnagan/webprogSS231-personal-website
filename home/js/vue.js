@@ -5,9 +5,9 @@ const app3 = Vue.createApp({
         itemNumber: null,
         itemImportant: false,
         shoppingList: [
-          { name: 'Tomatoes', number: 5, important: false, found: false },
-          { name: 'Bread', number: 1, important: false, found: false },
-          { name: 'Soap', number: 1, important: true, found: true }
+          { name: 'n/a', number: 5, important: false, found: false },
+          { name: 'b/a', number: 1, important: false, found: false },
+          { name: 'n/a', number: 1, important: true, found: true }
         ]
       }
     },
