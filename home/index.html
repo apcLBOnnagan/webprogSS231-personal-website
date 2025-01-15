@@ -46,13 +46,59 @@
           <table style="width:100%">
             <tr>
               <th>Traditional</th>
-              <th>Digital</th>
+              <th>Food</th>
             </tr>
             <tr>
-              <td><img src="Media(2).jpg" alt="Digital" height="100"></td>
-              <td><img src="bored.png" alt="Moodeng" height="100"></td>
+              <td><img src="sg.jpg" alt="Digital" height="100"></td>
+              <td><img src="md.png" alt="Moodeng" height="100"></td>
             </tr>
           </table>
+
+          <div id="app3">
+            <form v-on:submit.prevent="addItem">
+              <p>
+                What do you need? <br>
+                <input type="text" required placeholder="item name.." v-model="itemName">
+              </p>
+              <p>
+                How many? <br>
+                <input type="number" placeholder="number of items.." v-model="itemNumber">
+              </p>
+              <p>
+                Important?
+                <label>
+                  <input type="checkbox" v-model="itemImportant">
+                  {{ itemImportant }}
+                </label>
+              </p>
+              <button type="submit">Add item</button>
+            </form>
+            <br>
+            <hr>
+          
+            <div>
+              <p><strong>Desrcibe me and rate it 1 to 10:</strong></p>
+              <ul id="ulToFind">
+                <li 
+                  v-for="item in shoppingList" 
+                  v-bind:class="{ impClass: item.important }"
+                  v-on:click="item.found=!item.found"
+                  v-show="!item.found">
+                    {{ item.name }}, {{ item.number}}
+                </li>
+              </ul>
+              <ul id="ulFound">
+                <li 
+                  v-for="item in shoppingList" 
+                  v-bind:class="{ impClass: item.important }"
+                  v-on:click="item.found=!item.found"
+                  v-show="item.found">
+                    {{ item.name }}, {{ item.number}}
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
     </aside>
