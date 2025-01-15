@@ -41,19 +41,19 @@
         <br><div> Gallery </div>  
         <div id="app">
           <div>
-            <figure v-for="x in images">
+            <figure v-for="x in manyFoods">
               <img v-bind:src="x.url">
               <figcaption>{{ x.name }}</figcaption>
             </figure>
           </div>
+          
+        
         </div>
+        
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        
           
 
-
-
-
-          <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-          <script src="js/vue.js"></script>
 
     </div>
 
