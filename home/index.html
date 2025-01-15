@@ -77,29 +77,23 @@
             <br>
             <hr>
           
-            <div>
-              <p><strong>Description</strong></p>
-              <ul id="ulToFind">
-                <li 
-                  v-for="item in shoppingList" 
-                  v-bind:class="{ impClass: item.important }"
-                  v-on:click="item.found=!item.found"
-                  v-show="!item.found">
-                    {{ item.name }}, {{ item.number}}
-                </li>
-              </ul>
-              <ul id="ulFound">
-                <li 
-                  v-for="item in shoppingList" 
-                  v-bind:class="{ impClass: item.important }"
-                  v-on:click="item.found=!item.found"
-                  v-show="item.found">
-                    {{ item.name }}, {{ item.number}}
-                </li>
-              </ul>
+            <div id="app">
+              <div>
+                <figure v-for="x in images">
+                  <img v-bind:src="x.url">
+                  <figcaption>{{ x.name }}</figcaption>
+                </figure>
+              </div>
             </div>
+          
+              </section>
+            <aside class="sidebar">  Sidebar
+              <script src="js/vue.js"></script>
+            </div>
+          
           </div>
 
+          <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
           <script src="js/vue.js"></script>
 
         </div>
@@ -113,3 +107,7 @@
 
 </body>
 </html>
+
+
+
+
