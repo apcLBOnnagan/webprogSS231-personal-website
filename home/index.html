@@ -38,26 +38,24 @@
 
         </section>
       <aside class="sidebar"> 
-        <br>Picture Gallery    
+        <br><div> Gallery </div>  
+        <div id="app">
+          <div>
+            <figure v-for="x in images">
+              <img v-bind:src="x.url">
+              <figcaption>{{ x.name }}</figcaption>
+            </figure>
+          </div>
+        </div>
+          
 
-            <div id="app">
-              <div>
-                <figure v-for="x in images">
-                  <img v-bind:src="x.url">
-                  <figcaption>{{ x.name }}</figcaption>
-                </figure>
-              </div>
-            </div>
-          
-          
-           </div>
 
 
 
           <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
           <script src="js/vue.js"></script>
 
-        </div>
+    </div>
 
     </aside>
     </main>
